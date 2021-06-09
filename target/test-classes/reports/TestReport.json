@@ -1,0 +1,75 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-09T13:49:17.036Z",
+        "line": 10,
+        "name": "To verify the successful template",
+        "description": "",
+        "id": "login-functionality;to-verify-the-successful-template;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 9274000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User launches valid URL",
+            "match": {
+              "location": "com.app.stepDefinition.LoginPageStepDefinition.userLaunchesValidURL()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 363000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enters valid \"vijay.minimalist@gmail.com\" and \"Asdx#1234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"vijay.minimalist@gmail.com\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"Asdx#1234\"",
+                  "offset": 51
+                }
+              ],
+              "location": "com.app.stepDefinition.LoginPageStepDefinition.whenUserEnterValidURL(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2013000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user should be able to navigate to the homepage",
+            "match": {
+              "location": "com.app.stepDefinition.LoginPageStepDefinition.userLaunchesHomepage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          }
+        ]
+      }
+    ],
+    "name": "Login Functionality",
+    "description": "",
+    "id": "login-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/login.feature",
+    "tags": []
+  }
+]
