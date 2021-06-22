@@ -9,6 +9,7 @@ public class BaseUtils {
     public void initializer() {
         System.setProperty("webdriver.chrome.driver","src/test/java/com/app/drivers/chromedriver.exe");
         driver = new ChromeDriver();
+        System.out.println("initialized");
     }
 
 }
