@@ -3,73 +3,75 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-06-22T06:48:00.768Z",
+        "start_timestamp": "2021-06-22T15:05:56.988Z",
         "line": 10,
-        "name": "To verify the successful template",
+        "name": "To verify user is able to add products to the cart",
         "description": "",
-        "id": "login-functionality;to-verify-the-successful-template;;2",
+        "id": "adding-products-to-the-cart;to-verify-user-is-able-to-add-products-to-the-cart;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 8482000000,
+              "duration": 4459000000,
               "status": "passed"
             },
             "line": 5,
-            "name": "User launches valid URL",
+            "name": "User click on the \"mac\"",
             "match": {
-              "location": "com.app.stepDefinition.LoginPageStepDefinition.userLaunchesValidURL()"
+              "arguments": [
+                {
+                  "val": "\"mac\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.app.stepDefinition.ProductFinderStepDefinition.userClickOnThe(java.lang.String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 383000000,
+              "duration": 1640000000,
               "status": "passed"
             },
             "line": 6,
-            "name": "User enters valid \"vijay.minimalist@gmail.com\" and \"Asdx#1234\"",
+            "name": "User enters valid \"MacBook Air\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"vijay.minimalist@gmail.com\"",
+                  "val": "\"MacBook Air\"",
                   "offset": 18
-                },
-                {
-                  "val": "\"Asdx#1234\"",
-                  "offset": 51
                 }
               ],
-              "location": "com.app.stepDefinition.LoginPageStepDefinition.whenUserEnterValidURL(java.lang.String,java.lang.String)"
+              "location": "com.app.stepDefinition.ProductFinderStepDefinition.userEntersValid(java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 2007000000,
+              "duration": 7523000000,
               "status": "passed"
             },
             "line": 7,
-            "name": "user should be able to navigate to the homepage",
+            "name": "User click on Buy button to add the product to cart",
             "match": {
-              "location": "com.app.stepDefinition.LoginPageStepDefinition.userLaunchesHomepage()"
+              "location": "com.app.stepDefinition.ProductFinderStepDefinition.userClickOnBuyButtonToAddTheProductToCart()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@Login"
+            "name": "@Pf"
           }
         ]
       }
     ],
-    "name": "Login Functionality",
+    "name": "Adding Products to the cart",
     "description": "",
-    "id": "login-functionality",
+    "id": "adding-products-to-the-cart",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/login.feature",
+    "uri": "file:src/test/resources/features/product-finder.feature",
     "tags": []
   }
 ]
