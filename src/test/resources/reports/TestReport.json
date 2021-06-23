@@ -3,7 +3,80 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-06-22T15:05:56.988Z",
+        "start_timestamp": "2021-06-23T00:02:46.095Z",
+        "line": 10,
+        "name": "To verify the successful template",
+        "description": "",
+        "id": "login-functionality;to-verify-the-successful-template;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 9002000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User launches valid URL",
+            "match": {
+              "location": "com.app.stepDefinition.LoginPageStepDefinition.userLaunchesValidURL()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 404000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enters valid \"vijay.minimalist@gmail.com\" and \"Asdx#1234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"vijay.minimalist@gmail.com\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"Asdx#1234\"",
+                  "offset": 51
+                }
+              ],
+              "location": "com.app.stepDefinition.LoginPageStepDefinition.whenUserEnterValidURL(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2003000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user should be able to navigate to the homepage",
+            "match": {
+              "location": "com.app.stepDefinition.LoginPageStepDefinition.userLaunchesHomepage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          }
+        ]
+      }
+    ],
+    "name": "Login Functionality",
+    "description": "",
+    "id": "login-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/login.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-23T00:02:57.577Z",
         "line": 10,
         "name": "To verify user is able to add products to the cart",
         "description": "",
@@ -13,7 +86,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4459000000,
+              "duration": 3289000000,
               "status": "passed"
             },
             "line": 5,
@@ -31,7 +104,7 @@
           },
           {
             "result": {
-              "duration": 1640000000,
+              "duration": 963000000,
               "status": "passed"
             },
             "line": 6,
@@ -49,7 +122,7 @@
           },
           {
             "result": {
-              "duration": 7523000000,
+              "duration": 7659000000,
               "status": "passed"
             },
             "line": 7,
@@ -62,7 +135,7 @@
         ],
         "tags": [
           {
-            "name": "@Pf"
+            "name": "@ProductFinder"
           }
         ]
       }

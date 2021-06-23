@@ -1,6 +1,6 @@
 Feature: Adding Products to the cart
 
-  @Pf
+  @ProductFinder
   Scenario Outline: To verify user is able to add products to the cart
     Given User click on the "<Product>"
     When  User enters valid "<Model>"

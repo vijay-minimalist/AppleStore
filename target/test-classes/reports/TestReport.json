@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-06-22T15:05:32.476Z",
+        "start_timestamp": "2021-06-23T00:01:07.071Z",
         "line": 10,
         "name": "To verify user is able to add products to the cart",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4485000000,
+              "duration": 4671000000,
               "status": "passed"
             },
             "line": 5,
@@ -31,7 +31,7 @@
           },
           {
             "result": {
-              "duration": 946000000,
+              "duration": 1022000000,
               "status": "passed"
             },
             "line": 6,
@@ -49,7 +49,7 @@
           },
           {
             "result": {
-              "duration": 5572000000,
+              "duration": 11776000000,
               "status": "passed"
             },
             "line": 7,
@@ -62,7 +62,7 @@
         ],
         "tags": [
           {
-            "name": "@Pf"
+            "name": "@ProductFinder"
           }
         ]
       }
