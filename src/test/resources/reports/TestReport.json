@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-06-23T00:02:46.095Z",
+        "start_timestamp": "2021-06-23T01:37:58.933Z",
         "line": 10,
         "name": "To verify the successful template",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 9002000000,
+              "duration": 8737000000,
               "status": "passed"
             },
             "line": 5,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 404000000,
+              "duration": 381000000,
               "status": "passed"
             },
             "line": 6,
@@ -47,7 +47,7 @@
           },
           {
             "result": {
-              "duration": 2003000000,
+              "duration": 2010000000,
               "status": "passed"
             },
             "line": 7,
@@ -76,7 +76,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-06-23T00:02:57.577Z",
+        "start_timestamp": "2021-06-23T01:38:10.184Z",
         "line": 10,
         "name": "To verify user is able to add products to the cart",
         "description": "",
@@ -86,7 +86,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3289000000,
+              "duration": 614000000,
               "status": "passed"
             },
             "line": 5,
@@ -104,7 +104,7 @@
           },
           {
             "result": {
-              "duration": 963000000,
+              "duration": 2764000000,
               "status": "passed"
             },
             "line": 6,
@@ -122,7 +122,71 @@
           },
           {
             "result": {
-              "duration": 7659000000,
+              "duration": 9738000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User click on Buy button to add the product to cart",
+            "match": {
+              "location": "com.app.stepDefinition.ProductFinderStepDefinition.userClickOnBuyButtonToAddTheProductToCart()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ProductFinder"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-23T01:38:23.302Z",
+        "line": 11,
+        "name": "To verify user is able to add products to the cart",
+        "description": "",
+        "id": "adding-products-to-the-cart;to-verify-user-is-able-to-add-products-to-the-cart;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 701000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User click on the \"ipad\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ipad\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.app.stepDefinition.ProductFinderStepDefinition.userClickOnThe(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2687000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enters valid \"iPad Pro\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"iPad Pro\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.app.stepDefinition.ProductFinderStepDefinition.userEntersValid(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 11976000000,
               "status": "passed"
             },
             "line": 7,

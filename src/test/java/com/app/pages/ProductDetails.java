@@ -7,18 +7,18 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
 
-public class Mac extends BaseUtils {
-    public Mac(){
+public class ProductDetails extends BaseUtils {
+    public ProductDetails(){
         PageFactory.initElements(driver, this);
     }
-    @FindBy(xpath = "//body/div[@id='page']/div[9]/div[2]/bundle-selection[1]/store-provider[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/bundle-selector[1]/div[3]/div[1]/div[1]/div[4]/form[1]/div[1]/span[1]/button[1]")
-    private List<WebElement> appleM1256;
+    @FindBy(xpath = "//*[@id=\"ac-localnav\"]/div/div[2]/div[2]/div[2]/div[2]/a")
+    private List<WebElement> buyProduct;
 
     @FindBy(xpath = "//body/div[@id='page']/div[9]/div[1]/form[1]/div[3]/div[1]/div[2]/div[1]/div[2]/div[2]/button[1]")
     private List<WebElement> AddToBag;
 
-    public List<WebElement> getAppleM1256() {
-        return appleM1256;
+    public List<WebElement> BuyProduct() {
+        return buyProduct;
     }
 
     public List<WebElement> getAddToBag() {

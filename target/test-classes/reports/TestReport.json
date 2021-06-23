@@ -3,7 +3,80 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-06-23T00:01:07.071Z",
+        "start_timestamp": "2021-06-23T01:37:01.452Z",
+        "line": 10,
+        "name": "To verify the successful template",
+        "description": "",
+        "id": "login-functionality;to-verify-the-successful-template;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7734000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User launches valid URL",
+            "match": {
+              "location": "com.app.stepDefinition.LoginPageStepDefinition.userLaunchesValidURL()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 380000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enters valid \"vijay.minimalist@gmail.com\" and \"Asdx#1234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"vijay.minimalist@gmail.com\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"Asdx#1234\"",
+                  "offset": 51
+                }
+              ],
+              "location": "com.app.stepDefinition.LoginPageStepDefinition.whenUserEnterValidURL(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2000000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user should be able to navigate to the homepage",
+            "match": {
+              "location": "com.app.stepDefinition.LoginPageStepDefinition.userLaunchesHomepage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          }
+        ]
+      }
+    ],
+    "name": "Login Functionality",
+    "description": "",
+    "id": "login-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/login.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-23T01:37:11.668Z",
         "line": 10,
         "name": "To verify user is able to add products to the cart",
         "description": "",
@@ -13,7 +86,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4671000000,
+              "duration": 676000000,
               "status": "passed"
             },
             "line": 5,
@@ -31,7 +104,7 @@
           },
           {
             "result": {
-              "duration": 1022000000,
+              "duration": 2915000000,
               "status": "passed"
             },
             "line": 6,
@@ -49,7 +122,72 @@
           },
           {
             "result": {
-              "duration": 11776000000,
+              "error_message": "java.lang.IndexOutOfBoundsException: Index: 0, Size: 0\r\n\tat java.util.ArrayList.rangeCheck(ArrayList.java:659)\r\n\tat java.util.ArrayList.get(ArrayList.java:435)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)\r\n\tat com.sun.proxy.$Proxy16.get(Unknown Source)\r\n\tat com.app.stepDefinition.ProductFinderStepDefinition.userClickOnBuyButtonToAddTheProductToCart(ProductFinderStepDefinition.java:38)\r\n\tat ✽.User click on Buy button to add the product to cart(file:///C:/Users/Vijay/IdeaProjects/AppleStore/src/test/resources/features/product-finder.feature:7)\r\n",
+              "duration": 7940000000,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "User click on Buy button to add the product to cart",
+            "match": {
+              "location": "com.app.stepDefinition.ProductFinderStepDefinition.userClickOnBuyButtonToAddTheProductToCart()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ProductFinder"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-23T01:37:23.202Z",
+        "line": 11,
+        "name": "To verify user is able to add products to the cart",
+        "description": "",
+        "id": "adding-products-to-the-cart;to-verify-user-is-able-to-add-products-to-the-cart;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 646000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User click on the \"ipad\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ipad\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.app.stepDefinition.ProductFinderStepDefinition.userClickOnThe(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2647000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enters valid \"iPad Pro\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"iPad Pro\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.app.stepDefinition.ProductFinderStepDefinition.userEntersValid(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 15236000000,
               "status": "passed"
             },
             "line": 7,

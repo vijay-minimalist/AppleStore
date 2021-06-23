@@ -8,4 +8,5 @@ Feature: Adding Products to the cart
     Examples:
       |Product| |Model|
       |mac| |MacBook Air|
+      |ipad| |iPad Pro|
       
